@@ -73,12 +73,17 @@ python main_version2.py --image_path="sample.jpg" --model_path="yolov8n.pt"
 
 ‣Anyone wanting to simulate team-based project development
 
-‣‣📸 Sample CLI Output
-
-[INFO] Loading model from yolov8n.pt...
-[INFO] Running detection on sample.jpg...
-[INFO] Objects detected: Person, Dog, Car
-[INFO] Output saved as result.jpg
+‣‣📸 Folder Structure
+cicd
+  ├── main_version2.py       # CLI entry point
+  
+  ├── Version1.py            # Abstract class (V1)
+  
+  ├── Version2.py            # Implementation (V2) 
+  
+  ├── requirements.txt       # Project dependencies
+  
+  ├── README.md              # Project documentation
 
 
 
