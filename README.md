@@ -58,7 +58,7 @@ Copy
 Edit
 # Clone the repository
 git clone https://git@github.com:sailajacoder/cicd.git
-cd your-repo-name
+
 
 # Install dependencies
 pip install -r requirements.txt
