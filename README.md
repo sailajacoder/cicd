@@ -1,99 +1,75 @@
 🚀 Real-World Software Pipeline Simulation using Python Abstraction
-A hands-on simulation of how real-world software, data engineering, and ML teams collaborate.
+This project simulates a real-world software development pipeline, showcasing how software, data engineering, and ML teams collaborate through structured, versioned, and abstracted codebases.
 
-Demonstrates clean architecture, version control, and CI/CD practices through a multi-role development pipeline.
+The primary goal is to demonstrate:
 
-Built with Python, GitHub workflows, and modular principles — ideal for learning team-based software development.
+✅ How code is structured and divided across teams
 
-🎯 Project Objectives
+✅ How abstraction ensures clean integration and extensibility
 
-Structure code for multi-developer collaboration
+✅ How GitHub workflows can mimic real-world CI/CD pipeline
 
-Apply abstraction to ensure scalable and clean code
+Role	Responsibility	File
+👨‍💼 Senior Developer	Designs abstract skeleton using base classes	Version1.py
+👨‍💻 Junior Developer	Inherits and implements core logic	Version2.py
+🧪 User/Tester	Executes complete pipeline via CLI	main_version2.py
+🔁 Versioned Development Flow
 
-Simulate versioning and GitHub-based CI/CD pipelines
+Version	Role	Description
+V1	Senior Dev	Abstract base class structure (Version1.py)
+V2	Junior Dev	Implements logic over V1 skeleton (Version2.py)
+V3	Senior Dev	Adds new abstract methods for extended features
+V4	Junior Dev	Implements V3 methods to support new features
+🧰 Technologies & Concepts Used
+🔹 Python OOP with Abstract Base Classes (abc)
 
-Build a user-friendly command-line interface (CLI)
+🔹 Modular, readable, and scalable code structure
 
-Learn how real tech teams manage and scale projects
+🔹 User-friendly Command-Line Interface (CLI) via argparse
 
-🛠️ Project Workflow
+🔹 Git & GitHub for version control and collaboration
 
-👨‍💻 Senior Developer
-Designs the abstract base class (Version1.py)
+🔹 Object Detection using YOLOv8 (Ultralytics)
 
-👩‍💻 Junior Developer
-Implements logic by extending the abstract class (Version2.py)
+✨ Designed to be intuitive: the user can run the full pipeline without needing to read the internals.
 
-📦 Main Runner
-Runs the full pipeline via CLI (main_version2.py)
+📦 How to Run This Project
+Step 1: Clone the repository
+git clone https://github.com/VodnalaNaveen/cicd.git cd your-repo-name
 
-🔁 Versioned Development Flow 
-
-V1 – Senior developer creates abstract structure
-
-V2 – Junior developer implements logic
-
-V3 – Senior developer adds new abstract methods
-
-V4 – Junior developer implements new features
-
-💡 Technologies and Concepts Used 
-
-Python OOP using abstract base classes (abc)
-
-Modular and maintainable code structure
-
-Command-line interface with argparse
-
-Git and GitHub for version control and collaboration
-
-Object detection using YOLOv8
-
-Clean interface that hides internal logic from the user
-
-⚙️ How to Run This Project
-bash
-Copy
-Edit
-# Clone the repository
-git clone https://git@github.com:sailajacoder/cicd.git
-
-
-# Install dependencies
+Step 2: Install the dependencies
 pip install -r requirements.txt
 
-# Run the pipeline
-
+Step 3: Run the pipeline from the command line
 python main_version2.py --image_path="sample.jpg" --model_path="yolov8n.pt"
-Make sure Python is installed
 
-Download the required model file (yolov8n.pt) and provide the correct path
+🧠 What You’ll Learn
+🧩 The power of abstraction in building large-scale systems
 
-Output will be saved in the outputs/ folder
+🏗️ How real-world companies structure codebases for collaboration
 
-📁 Folder Structure
+🔄 Making code versionable, maintainable, and integration-ready
 
-bash
-Copy
-Edit
+🛠️ Real-world practice with GitHub workflows and CLI tools
+
+📍 Ideal For
+Aspiring developers learning software engineering best practices
+
+Students understanding modular and versioned development
+
+Data and ML engineers looking to integrate YOLOv8 into pipelines
+
+📁 Folder Structure Example
 cicd/
-├── main_version2.py       # CLI entry point
 
-├── Version1.py            # Abstract class (V1)
+├── Version1.py         # Abstract base class (skeleton)
 
-├── Version2.py            # Logic implementation (V2)
+├── Version2.py         # Logic implementation (inherits V1)
 
-├── requirements.txt       # Dependencies
+├── main_version2.py    # Entry point - CLI-based pipeline runner
 
-├── README.md              # Documentation
+├── sample.jpg          # Sample input image
 
+├── requirements.txt    # Python dependencies
 
-🧠 Learning Outcomes
-Understand the power of abstraction in scalable software projects
-
-Learn how real-world teams manage modular, versioned codebases
-
-Gain experience with GitHub workflows, version control, and CLI development
-
-Build confidence working on projects that simulate actual tech industry practices
+├── README.md           # Project overview
