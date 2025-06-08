@@ -35,7 +35,7 @@ V4	Junior Dev	Implements V3 methods to support new features
 
 📦 How to Run This Project
 Step 1: Clone the repository
-git clone https://github.com/VodnalaNaveen/cicd.git cd your-repo-name
+git clone https://git@github.com:sailajacoder/cicd.git cd your-repo-name
 
 Step 2: Install the dependencies
 pip install -r requirements.txt
