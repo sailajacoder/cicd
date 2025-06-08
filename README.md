@@ -46,7 +46,7 @@ Learn how to:
 ‣‣⚙️ How to Run This Project
 
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://git@github.com:sailajacoder/cicd.git
 cd your-repo-name
 
 # Install dependencies
