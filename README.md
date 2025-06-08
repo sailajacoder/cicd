@@ -1,101 +1,99 @@
+🚀 Real-World Software Pipeline Simulation using Python Abstraction
+A hands-on simulation of how real-world software, data engineering, and ML teams collaborate.
 
-🔧 From Code to CI/CD: Simulating Real-World Software Workflows
+Demonstrates clean architecture, version control, and CI/CD practices through a multi-role development pipeline.
 
-🧠 Coding isn’t just about writing logic — it’s about building scalable, structured systems that teams can actually collaborate on.
+Built with Python, GitHub workflows, and modular principles — ideal for learning team-based software development.
 
-Under the mentorship of my guide at Innomatics, I recently worked on a project that gave me a real taste of professional software development workflows — from abstraction to versioning to CI/CD simulation.
+🎯 Project Objectives
 
-Instead of just coding features, I followed the actual pipeline used in software and data teams 👇
+Structure code for multi-developer collaboration
 
+Apply abstraction to ensure scalable and clean code
 
+Simulate versioning and GitHub-based CI/CD pipelines
 
+Build a user-friendly command-line interface (CLI)
 
+Learn how real tech teams manage and scale projects
 
-✅ How It Works in Real Teams
+🛠️ Project Workflow
 
+👨‍💻 Senior Developer
+Designs the abstract base class (Version1.py)
 
+👩‍💻 Junior Developer
+Implements logic by extending the abstract class (Version2.py)
 
-🔹 Senior Developer creates the architecture using an abstract base class (Version1.py) — this acts as the blueprint.
+📦 Main Runner
+Runs the full pipeline via CLI (main_version2.py)
 
+🔁 Versioned Development Flow 
 
+V1 – Senior developer creates abstract structure
 
-🔹 Junior Developer (me!) inherits and implements the actual logic (Version2.py) — following structure strictly.
+V2 – Junior developer implements logic
 
+V3 – Senior developer adds new abstract methods
 
+V4 – Junior developer implements new features
 
-🔹 The final user simply runs a clean command-line interface (main_version2.py) — no need to understand internal code.
+💡 Technologies and Concepts Used 
 
+Python OOP using abstract base classes (abc)
 
+Modular and maintainable code structure
 
+Command-line interface with argparse
 
+Git and GitHub for version control and collaboration
 
-🔁 Versioned Development Flow – Just Like in Companies
+Object detection using YOLOv8
 
-1️⃣ V1: Senior Dev designs abstract structure ➝ pushes to GitHub
+Clean interface that hides internal logic from the user
 
- 2️⃣ V2: Junior Dev clones ➝ implements logic ➝ pushes update
+⚙️ How to Run This Project
+bash
+Copy
+Edit
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 
- 3️⃣ V3: Senior Dev adds new feature skeleton ➝ commits Version 3
+# Install dependencies
+pip install -r requirements.txt
 
- 4️⃣ V4: Junior updates logic accordingly ➝ syncs back to repo
+# Run the pipeline
 
+python main_version2.py --image_path="sample.jpg" --model_path="yolov8n.pt"
+Make sure Python is installed
 
+Download the required model file (yolov8n.pt) and provide the correct path
 
-🧠 What I Learned:
+Output will be saved in the outputs/ folder
 
+📁 Folder Structure
 
+bash
+Copy
+Edit
+cicd/
+├── main_version2.py       # CLI entry point
 
-1. Why abstraction matters in scalable, collaborative codebases
+├── Version1.py            # Abstract class (V1)
 
+├── Version2.py            # Logic implementation (V2)
 
+├── requirements.txt       # Dependencies
 
-2. How CI/CD pipelines actually begin — with clean structure & versioning
+├── README.md              # Documentation
 
 
+🧠 Learning Outcomes
+Understand the power of abstraction in scalable software projects
 
-3. The importance of writing CLI-friendly code that’s intuitive for users
+Learn how real-world teams manage modular, versioned codebases
 
+Gain experience with GitHub workflows, version control, and CLI development
 
-
-4. Real teamwork simulation using GitHub, modular design, and parser args
-
-
-
-🛠 Technologies & Concepts Used:
-
-
-
-1. Python OOP with Abstract Base Classes (abc)
-
-
-
-2. Helper functions and modular design
-
-
-
-3. argparse for CLI-based execution
-
-
-
-4. Git & GitHub for team collaboration
-
-
-
-5. YOLOv8 for object detection
-
-
-
-🙌 A huge shoutout to my mentor and the team at Innomatics for creating such a real-world, career-ready learning experience.
-
-
-
-🔗 Project Link: https://github.com/VodnalaNaveen/cicd
-
-
-
-✅ Version1.py – Abstract class
-
-✅ Version2.py – Child implementation
-
-
-✅ main_version2.py – Command-line interface in action
+Build confidence working on projects that simulate actual tech industry practices
