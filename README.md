@@ -74,7 +74,9 @@ python main_version2.py --image_path="sample.jpg" --model_path="yolov8n.pt"
 ‣Anyone wanting to simulate team-based project development
 
 ‣‣📸 Folder Structure
+
 cicd
+
   ├── main_version2.py       # CLI entry point
   
   ├── Version1.py            # Abstract class (V1)
